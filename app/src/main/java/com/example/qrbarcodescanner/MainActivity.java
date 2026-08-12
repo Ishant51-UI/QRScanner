@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     DecoratedBarcodeView barcodeView;
     ImageButton btnFlash ;
-    ImageView image21;
+    ImageView image21 ,create;
     boolean flashOn = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,15 @@ public class MainActivity extends AppCompatActivity {
         barcodeView = findViewById(R.id.barcodeView);
         btnFlash = findViewById(R.id.btnFlash);
         image21=findViewById(R.id.image21);
+        create=findViewById(R.id.create);
+       create.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent = new Intent(MainActivity.this,CreateActivity.class);
+               startActivity(intent);
+               finish();
+           }
+       });
 barcodeView.getStatusView().setVisibility(View.GONE);
         barcodeView.decodeContinuous(result -> {
             barcodeView.pause();

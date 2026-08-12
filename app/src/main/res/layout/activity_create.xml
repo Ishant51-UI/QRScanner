@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- TOOLBAR -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#00897B"
+        android:title="Create"
+        android:titleTextColor="@android:color/white"
+        android:elevation="4dp"/>
+
+
+    <!-- TITLE -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Create QR Code"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#222222"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Choose what you want to create"
+        android:textSize="15sp"
+        android:textColor="#777777"/>
+
+
+    <!-- URL -->
+
+    <Button
+        android:id="@+id/btnUrl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="25dp"
+        android:text="🔗   URL"
+        android:textSize="17sp"
+        android:gravity="start|center_vertical"/>
+
+
+    <!-- TEXT -->
+
+    <Button
+        android:id="@+id/btnText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:text="📝   Text"
+        android:textSize="17sp"
+        android:gravity="start|center_vertical"/>
+
+
+    <!-- CONTACT -->
+
+    <Button
+        android:id="@+id/btnContact"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:text="👤   Contact"
+        android:textSize="17sp"
+        android:gravity="start|center_vertical"/>
+
+
+    <!-- WIFI -->
+
+    <Button
+        android:id="@+id/btnWifi"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:text="📶   Wi-Fi"
+        android:textSize="17sp"
+        android:gravity="start|center_vertical"/>
+
+
+    <!-- EMAIL -->
+
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:text="✉   Email"
+        android:textSize="17sp"
+        android:gravity="start|center_vertical"/>
+
+</LinearLayout>
